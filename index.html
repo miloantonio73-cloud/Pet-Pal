@@ -5,18 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PetPal</title>
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#ff6600">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🐾 Benvenuto su PetPal</h1>
-  <p>La tua app per prenderti cura dei tuoi amici a quattro zampe!</p>
+  <header>
+    <img src="icon.png" alt="Logo PetPal" class="logo">
+    <h1>PetPal</h1>
+  </header>
 
-  <script src="cloud.js"></script>
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("service-worker.js");
-    }
-  </script>
+  <nav>
+    <button onclick="showPage('diario')">📒 Diario</button>
+    <button onclick="showPage('promemoria')">⏰ Promemoria</button>
+    <button onclick="showPage('galleria')">📸 Galleria</button>
+  </nav>
+
+  <main>
+    <section id="diario" class="page active">
+      <h2>Diario</h2>
+      <p>Qui potrai registrare la salute del tuo animale.</p>
+    </section>
+    <section id="promemoria" class="page">
+      <h2>Promemoria</h2>
+      <p>Imposta promemoria per vaccinazioni e visite.</p>
+    </section>
+    <section id="galleria" class="page">
+      <h2>Galleria</h2>
+      <p>Carica e conserva le foto del tuo amico a 4 zampe.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
