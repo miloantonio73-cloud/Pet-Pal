@@ -1,56 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PetPal</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff6600">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="petpal_favicon.png">
 </head>
 <body>
-  <header>
-    <h1>🐾 PetPal</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#diario">Diario</a>
-      <a href="#ricordi">Ricordi</a>
-      <a href="#contatti">Contatti</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home">
-      <h2>🐶 Benvenuto su PetPal</h2>
-      <p>La tua app amica per prenderti cura del tuo animale domestico!</p>
-      <img src="https://placekitten.com/500/300" alt="Gatto carino">
-    </section>
-
-    <section id="diario">
-      <h2>📘 Diario di Salute 🐶</h2>
-      <ul id="lista-diario">
-        <li>01/02/2025 - Vaccinazione annuale 🐶</li>
-        <li>15/03/2025 - Visita di controllo dal veterinario 🐶</li>
-      </ul>
-      <button onclick="aggiungiNota()">➕ Aggiungi nota 🐶</button>
-    </section>
-
-    <section id="ricordi">
-      <h2>📷 Ricordi 🐶</h2>
-      <p>Qui potrai salvare le foto e i momenti più belli del tuo animale.</p>
-    </section>
-
-    <section id="contatti">
-      <h2>📩 Contatti 🐶</h2>
-      <p>Scrivici per suggerimenti o domande!</p>
-      <p>Email: supporto@petpal.it</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 PetPal - Creato con ❤️ per gli amanti degli animali</p>
-  </footer>
+  <h1>🐾 Benvenuto su PetPal</h1>
+  <p>La tua app per prenderti cura dei tuoi amici a quattro zampe!</p>
 
   <script src="cloud.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
 </body>
 </html>

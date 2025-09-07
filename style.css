@@ -1,94 +1,10 @@
-
-/* Stile generale */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fdfdfd;
+  background-color: #fff7f0;
   color: #333;
-  line-height: 1.6;
-}
-
-/* Header */
-header {
-  background-color: #ffb347;
-  color: white;
-  padding: 15px 20px;
   text-align: center;
+  padding: 50px;
 }
-
-header h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-/* Menu di navigazione */
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Sezioni */
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 30px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #fff8f0;
-}
-
-/* Titoli delle sezioni */
-section h2 {
+h1 {
   color: #ff6600;
-  margin-top: 0;
-}
-
-/* Diario */
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  background: #ffe4b5;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-/* Bottone */
-button {
-  background-color: #ff6600;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-button:hover {
-  background-color: #e65c00;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  background: #333;
-  color: white;
-  padding: 15px;
 }
